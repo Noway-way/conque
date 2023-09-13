@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "227220918976",
+    "project_id": "my-conquer-p",
+    "storage_bucket": "my-conquer-p.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227220918976:android:17643d6abbea8150449325",
+        "android_client_info": {
+          "package_name": "com.example.myapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyJNmBnaChZnaPmjsc5kSazPTrX_C_ZA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

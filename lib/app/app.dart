@@ -1,0 +1,34 @@
+import 'package:myapp/ui/bottom_sheets/notice/notice_sheet.dart';
+import 'package:myapp/ui/dialogs/info_alert/info_alert_dialog.dart';
+import 'package:myapp/ui/views/home/home_view.dart';
+import 'package:myapp/ui/views/startup/startup_view.dart';
+import 'package:stacked/stacked_annotations.dart';
+import 'package:stacked_services/stacked_services.dart';
+import 'package:myapp/ui/views/create_game_page/create_game_page_view.dart';
+import 'package:myapp/services/firebase_service_service.dart';
+// @stacked-import
+
+@StackedApp(
+  routes: [
+    MaterialRoute(page: HomeView),
+    MaterialRoute(page: StartupView),
+    MaterialRoute(page: CreateGamePageView),
+// @stacked-route
+  ],
+  dependencies: [
+    LazySingleton(classType: BottomSheetService),
+    LazySingleton(classType: DialogService),
+    LazySingleton(classType: NavigationService),
+    LazySingleton(classType: FirebaseServiceService),
+// @stacked-service
+  ],
+  bottomsheets: [
+    StackedBottomsheet(classType: NoticeSheet),
+    // @stacked-bottom-sheet
+  ],
+  dialogs: [
+    StackedDialog(classType: InfoAlertDialog),
+    // @stacked-dialog
+  ],
+)
+class App {}
