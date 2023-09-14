@@ -2,7 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 class FirebaseServiceService {
   final f = FirebaseFirestore.instance.collection('games');
-  final j = 'name';
 
   Future<void> createDocument(String userid) async {
     final unique = DateTime.now().toString();
